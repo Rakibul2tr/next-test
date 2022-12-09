@@ -1,0 +1,48 @@
+.container {
+  padding: 0 2rem;
+}
+
+.menu_bar{
+  background-color: #444;
+  
+}
+.btn_size{
+  width:30%;
+  font-size: 11px;
+  margin-right: 5px;
+}
+.cartCoulam{
+  position: fixed;
+  width: 10%;
+}
+.customItem{
+    padding: 5px;
+    text-transform: capitalize;
+    font-weight: 500;
+    border-bottom: 1px solid #ccc;
+    cursor: pointer;
+}
+.cardItem{
+  position: relative;
+  width: 100% !important;
+  height: 300px;
+  cursor: pointer;
+}
+.cardTitle{
+  bottom: -100px;
+  transition: .3s;
+  transition-duration: 0.5s;
+  transition-timing-function: cubic-bezier(0.57, 0.13, 0.43, 1.06);
+  transition-delay: 0s;
+  transition-property: all;
+  z-index: 0;
+  visibility: hidden;
+}
+  
+.cardItem:hover .cardTitle{
+    bottom: 0;
+    visibility: visible;
+    background-image: linear-gradient(45deg, #35d98d, #1c0fe9c7);
+    color: white;
+    border-radius: 5px;
+}
